@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: url('../Travelbg.jpg') no-repeat center/cover;
+            /* background-color: transparent; */
+            width: 100vw;
+            height: 100vh;
+            backdrop-filter: blur(10px);
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #0a3276;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+
+        input[type=submit]:hover {
+            background-color: #01173d;
+        }
+
+        .container {
+            border-radius: 20px;
+            background-color: #dfebeb;
+            padding: 20px;
+            width: 40%;
+            display: block;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <h2>Contact For More Query</h2><br>
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                <!-- <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Your Email..."> -->
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="usa">India</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">China</option>
+                    <option value="usa">Russia</option>
+                    <option value="usa">Pakistan</option>
+                    <option value="usa">Sri Lanka</option>
+                    <option value="usa">Nepal</option>
+                    <option value="usa">Australia</option>
+                    <option value="usa">Others</option>
+
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
